@@ -2,7 +2,7 @@
 A modern, lightweight web browser without all of the heavy stuff other browsers come with.
 
 # Download
-You can download the latest build of Eclipse at [/wiki/Downloads] (https://github.com/EclipseUK/Browser/wiki/Downloads)
+You can download the latest build of Eclipse at https://github.com/EclipseUK/Browser/wiki/Downloads
 
 # How to commit
 This software is made in Visual Basic 2010, please don't use any other version of Visual Basic as it will break the file.
