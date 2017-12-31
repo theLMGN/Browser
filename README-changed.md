@@ -8,4 +8,5 @@ If your adding in a new feature, make it fit in with the rest of the gui (otherw
 # Notice
 This software is open source, mainly so community can patch bugs and add new feature. Please do not copy our code and rebrand it.
 
-# Thank you for reading
+# Thank you
+Thank you for reading this small document, give a main download link to the application when a version is ready to be distributed.
