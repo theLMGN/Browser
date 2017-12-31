@@ -1,9 +1,14 @@
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\bin\Debug\Eclipse.exe
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\bin\Debug\Eclipse.pdb
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\bin\Debug\Eclipse.xml
-C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\WindowsApplication1.Form1.resources
-C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\WindowsApplication1.Resources.resources
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.vbproj.GenerateResource.Cache
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.exe
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.xml
 C:\Users\Orlando\documents\visual studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.pdb
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.Form1.resources
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.Resources.resources
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Debug\Eclipse.exe.config
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Debug\Eclipse.exe.manifest
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Debug\Eclipse.application
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.exe.manifest
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Debug\Eclipse.application

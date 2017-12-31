@@ -1,0 +1,13 @@
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.Form1.resources
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.Resources.resources
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.vbproj.GenerateResource.Cache
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.exe.manifest
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.exe
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.xml
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.pdb
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.exe.manifest
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.application
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.exe
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.pdb
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.xml
+C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.application
