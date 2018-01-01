@@ -11,3 +11,14 @@ C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Relea
 C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.pdb
 C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\bin\Release\Eclipse.xml
 C:\Users\Orlando\Documents\Visual Studio 2010\Projects\Eclipse\Eclipse\obj\x86\Release\Eclipse.application
+C:\Users\Tim\Downloads\Browser-master\Browser-master\bin\Release\Eclipse.exe.config
+C:\Users\Tim\Downloads\Browser-master\Browser-master\bin\Release\Eclipse.exe
+C:\Users\Tim\Downloads\Browser-master\Browser-master\bin\Release\Eclipse.pdb
+C:\Users\Tim\Downloads\Browser-master\Browser-master\bin\Release\Eclipse.xml
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.About.resources
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.Browser.resources
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.Resources.resources
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.vbproj.GenerateResource.Cache
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.exe
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.xml
+C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Release\Eclipse.pdb

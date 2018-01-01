@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://google.co.uk")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://www.google.co.uk")>  _
         Public Property Home() As String
             Get
                 Return CType(Me("Home"),String)
