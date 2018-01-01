@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Eclipse Browser")> 
-<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyDescription("A modern, lightweight web browser without all of the heavy stuff other browsers come with.")> 
 <Assembly: AssemblyCompany("Eclipse Software")> 
 <Assembly: AssemblyProduct("Eclipse Web Browser")> 
 <Assembly: AssemblyCopyright("Copyright © Eclipse Software 2017")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTrademark("Eclipse")> 
 
 <Assembly: ComVisible(False)>
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.1")> 
+<Assembly: AssemblyFileVersion("1.0.0.1")> 
