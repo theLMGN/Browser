@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Eclipse.Form1
+            Me.MainForm = Global.Eclipse.Browser
         End Sub
     End Class
 End Namespace
