@@ -1,11 +1,21 @@
 ﻿Public Class Browser
-
+    Dim modalHTML As String = "about:<style>body{background: #2d2d2d; margin: 0;color: #fff; font-family: ""Segoe UI Symbol"", ""Segoe UI""; position: absolute; padding-left: 1em;}</style><div id=""content""><h1>{title}</h1>{content}</div><script>document.title = ""{title}""</script>"
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CloseLabel.Click
         Me.Close()
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MinimiseLabel.Click
+        Dim oldSize = Me.Size
+        While True
+            Me.Size = New Size(Me.Size.Width * 0.75, Me.Size.Height * 0.75)
+            Me.Refresh()
+            If Me.Size.Height < 10 And Me.Size.Width < 10 Then
+                Exit While
+            End If
+        End While
+
         Me.WindowState = FormWindowState.Minimized
+        Me.Size = oldSize
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchButton.Click
@@ -32,24 +42,21 @@
         WebBrowser1.Refresh()
     End Sub
 
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SettingsButton.Click
-        Settings.Show()
-    End Sub
-
-    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ContactButton.Click
-        MessageBox.Show("You can contact the main developer (9002) at orlando@retroverse.ml, for bugs or software issues please report them at https://github.com/EclipseUK/Browser/issues.", "Contact", MessageBoxButtons.OK)
-    End Sub
-
+    Dim oldSize = New Size()
+    Dim oldPosition = New Point
     Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MaximiseLabel.Click
-        Me.WindowState = FormWindowState.Maximized
-        MaximiseLabel.Hide()
-        RestoreLabel.Show()
-    End Sub
+        If MaximiseLabel.Text = "+" Then
+            oldSize = Me.Size
+            oldPosition = Me.Location
+            Me.Location = My.Computer.Screen.WorkingArea.Location 'Won't work with multimonitors though.
+            Me.Size = My.Computer.Screen.WorkingArea.Size
+            MaximiseLabel.Text = "-"
+        Else
+            Me.Location = oldPosition
+            Me.Size = oldSize
+            MaximiseLabel.Text = "+"
+        End If
 
-    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RestoreLabel.Click
-        Me.WindowState = FormWindowState.Normal
-        RestoreLabel.Hide()
-        MaximiseLabel.Show()
     End Sub
 
 #Region "Move Form"
@@ -90,6 +97,33 @@
     End Sub
 
     Private Sub NewTabToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewTabToolStripMenuItem.Click
-        about.show()
+        WebBrowser1.Url = New Uri(modalHTML.Replace("{title}", "About Eclipse Browser").Replace("{content}", "<h2>Lead Developer: 9002</h2>Other Developers: WindowsLogic Productions and theLMGN"))
+    End Sub
+
+    Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
+
+
+        If Not TextBox1.Focused Then
+            Try
+                TextBox1.Text = WebBrowser1.Url.AbsoluteUri
+            Catch
+            End Try
+        End If
+    End Sub
+
+    Private Sub update_Tick(sender As Object, e As EventArgs) Handles update.Tick
+        Try
+            Label1.Text = "eclipse - " & WebBrowser1.DocumentTitle
+            Me.Text = "Eclipse - " & WebBrowser1.DocumentTitle
+        Catch
+        End Try
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        settings.Show()
+    End Sub
+
+    Private Sub ReportAnIssueToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportAnIssueToolStripMenuItem.Click
+        WebBrowser1.Url = New Uri("https://github.com/eclipseuk/browser/issues")
     End Sub
 End Class

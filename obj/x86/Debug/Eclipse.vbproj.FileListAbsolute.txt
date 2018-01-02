@@ -24,3 +24,16 @@ C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Debug\Eclipse.vbpro
 C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Debug\Eclipse.Browser.resources
 C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Debug\Eclipse.About.resources
 C:\Users\Tim\Downloads\Browser-master\Browser-master\obj\x86\Debug\Eclipse.Settings.resources
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.vbprojResolveAssemblyReference.cache
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.Browser.resources
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.Resources.resources
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.vbproj.GenerateResource.Cache
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.vbproj.CoreCompileInputs.cache
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.exe
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.xml
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.pdb
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\bin\Debug\Eclipse.exe.config
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\bin\Debug\Eclipse.exe
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\bin\Debug\Eclipse.pdb
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\bin\Debug\Eclipse.xml
+C:\Users\theLMGN\AppData\Local\Temp\Browser-master\Browser-master\obj\x86\Debug\Eclipse.settings.resources
