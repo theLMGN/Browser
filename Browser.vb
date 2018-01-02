@@ -26,9 +26,7 @@
         WebBrowser1.Navigate(My.Settings.Home)
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-        WebBrowser1.Navigate(TextBox1.Text)
-    End Sub
+
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BackButton.Click
         WebBrowser1.GoBack()
@@ -101,7 +99,7 @@
     End Sub
 
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
-
+        ProgressBar1.Visible = False
 
         If Not TextBox1.Focused Then
             Try
@@ -125,5 +123,18 @@
 
     Private Sub ReportAnIssueToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportAnIssueToolStripMenuItem.Click
         WebBrowser1.Url = New Uri("https://github.com/eclipseuk/browser/issues")
+    End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            WebBrowser1.Navigate(New Uri(TextBox1.Text))
+            WebBrowser1.Focus()
+        End If
+
+    End Sub
+
+    Private Sub WebBrowser1_Navigating(sender As Object, e As WebBrowserNavigatingEventArgs) Handles WebBrowser1.Navigating
+        ProgressBar1.Visible = True
+        ProgressBar1.Enabled = True
     End Sub
 End Class

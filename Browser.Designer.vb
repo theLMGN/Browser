@@ -24,39 +24,29 @@ Partial Class Browser
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Browser))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CloseLabel = New System.Windows.Forms.Label()
         Me.MinimiseLabel = New System.Windows.Forms.Label()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SearchButton = New System.Windows.Forms.Button()
-        Me.HomeButton = New System.Windows.Forms.Button()
-        Me.BackButton = New System.Windows.Forms.Button()
-        Me.ForwardButton = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MaximiseLabel = New System.Windows.Forms.Label()
-        Me.MenuButton = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.NewTabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportAnIssueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.update = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.MenuButton = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ForwardButton = New System.Windows.Forms.Button()
+        Me.BackButton = New System.Windows.Forms.Button()
+        Me.HomeButton = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.BackColor = System.Drawing.Color.Black
-        Me.PictureBox1.Location = New System.Drawing.Point(-7, -8)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1312, 27)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'CloseLabel
         '
@@ -93,11 +83,11 @@ Partial Class Browser
         Me.WebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WebBrowser1.Location = New System.Drawing.Point(3, 66)
+        Me.WebBrowser1.Location = New System.Drawing.Point(3, 55)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(1293, 682)
+        Me.WebBrowser1.Size = New System.Drawing.Size(1293, 693)
         Me.WebBrowser1.TabIndex = 4
         Me.WebBrowser1.Url = New System.Uri("http://google.co.uk", System.UriKind.Absolute)
         '
@@ -107,11 +97,11 @@ Partial Class Browser
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.BackColor = System.Drawing.Color.Black
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 19.5!)
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 13.0!)
         Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(192, 25)
+        Me.TextBox1.Location = New System.Drawing.Point(132, 25)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(1007, 35)
+        Me.TextBox1.Size = New System.Drawing.Size(1089, 24)
         Me.TextBox1.TabIndex = 5
         '
         'SearchButton
@@ -121,68 +111,13 @@ Partial Class Browser
         Me.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.SearchButton.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SearchButton.ForeColor = System.Drawing.Color.White
-        Me.SearchButton.Location = New System.Drawing.Point(1205, 25)
+        Me.SearchButton.Location = New System.Drawing.Point(1227, 25)
         Me.SearchButton.Name = "SearchButton"
-        Me.SearchButton.Size = New System.Drawing.Size(40, 35)
+        Me.SearchButton.Size = New System.Drawing.Size(39, 24)
         Me.SearchButton.TabIndex = 6
         Me.SearchButton.Text = "GO"
         Me.ToolTip1.SetToolTip(Me.SearchButton, "Search")
         Me.SearchButton.UseVisualStyleBackColor = False
-        '
-        'HomeButton
-        '
-        Me.HomeButton.BackColor = System.Drawing.Color.Black
-        Me.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.HomeButton.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.HomeButton.ForeColor = System.Drawing.Color.White
-        Me.HomeButton.Location = New System.Drawing.Point(147, 25)
-        Me.HomeButton.Name = "HomeButton"
-        Me.HomeButton.Size = New System.Drawing.Size(39, 35)
-        Me.HomeButton.TabIndex = 7
-        Me.HomeButton.Text = "🏠"
-        Me.ToolTip1.SetToolTip(Me.HomeButton, "Home")
-        Me.HomeButton.UseVisualStyleBackColor = False
-        '
-        'BackButton
-        '
-        Me.BackButton.BackColor = System.Drawing.Color.Black
-        Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.BackButton.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.BackButton.ForeColor = System.Drawing.Color.White
-        Me.BackButton.Location = New System.Drawing.Point(12, 25)
-        Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(39, 35)
-        Me.BackButton.TabIndex = 8
-        Me.BackButton.Text = "⬅️"
-        Me.ToolTip1.SetToolTip(Me.BackButton, "Back")
-        Me.BackButton.UseVisualStyleBackColor = False
-        '
-        'ForwardButton
-        '
-        Me.ForwardButton.BackColor = System.Drawing.Color.Black
-        Me.ForwardButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ForwardButton.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.ForwardButton.ForeColor = System.Drawing.Color.White
-        Me.ForwardButton.Location = New System.Drawing.Point(57, 25)
-        Me.ForwardButton.Name = "ForwardButton"
-        Me.ForwardButton.Size = New System.Drawing.Size(40, 35)
-        Me.ForwardButton.TabIndex = 9
-        Me.ForwardButton.Text = "➡️"
-        Me.ToolTip1.SetToolTip(Me.ForwardButton, "Forward")
-        Me.ForwardButton.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Black
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(102, 25)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(39, 35)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "🔄"
-        Me.Button5.UseVisualStyleBackColor = False
         '
         'ToolTip1
         '
@@ -202,21 +137,6 @@ Partial Class Browser
         Me.MaximiseLabel.TabIndex = 13
         Me.MaximiseLabel.Text = "+"
         Me.ToolTip1.SetToolTip(Me.MaximiseLabel, "Maximise")
-        '
-        'MenuButton
-        '
-        Me.MenuButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MenuButton.BackColor = System.Drawing.Color.Black
-        Me.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.MenuButton.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.MenuButton.ForeColor = System.Drawing.Color.White
-        Me.MenuButton.Location = New System.Drawing.Point(1251, 25)
-        Me.MenuButton.Name = "MenuButton"
-        Me.MenuButton.Size = New System.Drawing.Size(40, 35)
-        Me.MenuButton.TabIndex = 15
-        Me.MenuButton.Text = "≡"
-        Me.ToolTip1.SetToolTip(Me.MenuButton, "Menu (BETA)")
-        Me.MenuButton.UseVisualStyleBackColor = False
         '
         'ContextMenuStrip1
         '
@@ -270,6 +190,100 @@ Partial Class Browser
         '
         Me.update.Enabled = True
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(132, 42)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(1089, 23)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee
+        Me.ProgressBar1.TabIndex = 17
+        '
+        'MenuButton
+        '
+        Me.MenuButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MenuButton.BackColor = System.Drawing.Color.Black
+        Me.MenuButton.BackgroundImage = Global.Eclipse.My.Resources.Resources.menu
+        Me.MenuButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.MenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.MenuButton.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.MenuButton.ForeColor = System.Drawing.Color.White
+        Me.MenuButton.Location = New System.Drawing.Point(1272, 25)
+        Me.MenuButton.Name = "MenuButton"
+        Me.MenuButton.Size = New System.Drawing.Size(24, 24)
+        Me.MenuButton.TabIndex = 15
+        Me.ToolTip1.SetToolTip(Me.MenuButton, "Menu (BETA)")
+        Me.MenuButton.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Black
+        Me.Button5.BackgroundImage = Global.Eclipse.My.Resources.Resources.refresh
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(72, 25)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(24, 24)
+        Me.Button5.TabIndex = 10
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'ForwardButton
+        '
+        Me.ForwardButton.BackColor = System.Drawing.Color.Black
+        Me.ForwardButton.BackgroundImage = Global.Eclipse.My.Resources.Resources.fwrd
+        Me.ForwardButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ForwardButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ForwardButton.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.ForwardButton.ForeColor = System.Drawing.Color.White
+        Me.ForwardButton.Location = New System.Drawing.Point(42, 25)
+        Me.ForwardButton.Name = "ForwardButton"
+        Me.ForwardButton.Size = New System.Drawing.Size(24, 24)
+        Me.ForwardButton.TabIndex = 9
+        Me.ToolTip1.SetToolTip(Me.ForwardButton, "Forward")
+        Me.ForwardButton.UseVisualStyleBackColor = False
+        '
+        'BackButton
+        '
+        Me.BackButton.BackColor = System.Drawing.Color.Black
+        Me.BackButton.BackgroundImage = Global.Eclipse.My.Resources.Resources.back
+        Me.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BackButton.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.BackButton.ForeColor = System.Drawing.Color.White
+        Me.BackButton.Location = New System.Drawing.Point(12, 25)
+        Me.BackButton.Name = "BackButton"
+        Me.BackButton.Size = New System.Drawing.Size(24, 24)
+        Me.BackButton.TabIndex = 8
+        Me.ToolTip1.SetToolTip(Me.BackButton, "Back")
+        Me.BackButton.UseVisualStyleBackColor = False
+        '
+        'HomeButton
+        '
+        Me.HomeButton.BackColor = System.Drawing.Color.Black
+        Me.HomeButton.BackgroundImage = Global.Eclipse.My.Resources.Resources.home
+        Me.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.HomeButton.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.HomeButton.ForeColor = System.Drawing.Color.White
+        Me.HomeButton.Location = New System.Drawing.Point(102, 25)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(24, 24)
+        Me.HomeButton.TabIndex = 7
+        Me.ToolTip1.SetToolTip(Me.HomeButton, "Home")
+        Me.HomeButton.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackColor = System.Drawing.Color.Black
+        Me.PictureBox1.Location = New System.Drawing.Point(-7, -8)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1312, 27)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Browser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -289,6 +303,7 @@ Partial Class Browser
         Me.Controls.Add(Me.MinimiseLabel)
         Me.Controls.Add(Me.CloseLabel)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -296,8 +311,8 @@ Partial Class Browser
         Me.Name = "Browser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Eclipse"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -321,4 +336,5 @@ Partial Class Browser
     Friend WithEvents ReportAnIssueToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents update As Timer
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class
